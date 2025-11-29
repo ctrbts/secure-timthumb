@@ -1,0 +1,50 @@
+{
+    "name": "ctrbts/secure-timthumb",
+    "description": "A secure, modern, drop-in replacement for the legacy TimThumb PHP script.",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Fernando Merlo",
+            "role": "Maintainer"
+        },
+        {
+            "name": "Ben Gillbanks",
+            "role": "Original Author"
+        },
+        {
+            "name": "Mark Maunder",
+            "role": "Original Author"
+        }
+    ],
+    "keywords": [
+        "timthumb",
+        "image",
+        "thumbnail",
+        "gd",
+        "security",
+        "legacy-support"
+    ],
+    "require": {
+        "php": ">=7.4",
+        "ext-gd": "*",
+        "ext-curl": "*",
+        "ext-fileinfo": "*",
+        "ext-json": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "TimThumb\\": "src/"
+        },
+        "files": [
+            "TimThumb.php"
+        ]
+    },
+    "suggest": {
+        "intervention/image": "For new projects, strictly prefer Intervention Image over this legacy script."
+    },
+    "minimum-stability": "stable",
+    "support": {
+        "issues": "https://github.com/ctrbts/secure-timthumb/issues"
+    }
+}
